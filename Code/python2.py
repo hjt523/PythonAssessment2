@@ -53,7 +53,12 @@ def one(input):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(range).
 
 def two(input):
-    return False
+	num = float(input)
+	for i in range(2,input -1):
+		
+		if (int(num/i) == float(num/i) ):
+			return False
+	return True
 
 	# <QUESTION 3>
 
