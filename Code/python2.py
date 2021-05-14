@@ -75,7 +75,13 @@ def two(input):
 	# What happens if you multiply a string by a number?
 
 def three(a):
-	return 1
+	term2= str(a)+str(a)
+	term3= term2 + str(a)
+	term4= term3 + str(a)
+
+	numwang = a + int(term2) + int( term3) + int(term4)
+
+	return numwang
 
 	# <QUESTION 4>
 
