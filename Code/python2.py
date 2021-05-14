@@ -30,7 +30,12 @@
 	# How does a for loop iterate through a string?
 
 def one(input):
-	return ""
+	newstring =""
+	for i in range(0,len(input)):
+		newstring = newstring + input[i] + input[i] + input[i]
+
+
+	return newstring
 
 	# <QUESTION 2>
 
