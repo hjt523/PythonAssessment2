@@ -247,7 +247,35 @@ def eight(input,  a):
 	# There are no hints for this question.
 
 def nine(string1, string2):
-    return False
+	alist = list(string1)
+	blist = list(string2)
+	alen = len(string1)
+	blen = len(string2)
+	counter = 0
+	if ( alen <= blen):
+		for i in range(0, alen):
+			for j in range(0, blen):
+				if alist[i] == blist[j]:
+					counter = counter +1
+					alist[i] = 789
+					blist[j] = 8967
+		if (counter == alen):
+			return True
+		else:
+			return False
+
+	elif ( alen > blen):
+		for i in range(0, blen):
+			for j in range(0, alen):
+				if blist[i] == alist[j]:
+					counter = counter +1
+					blist[i] = 789
+					alist[j] = 8967
+		if (counter == blen):
+			return True
+		else:
+			return False
+
 
 	# <QUESTION 10>
 
