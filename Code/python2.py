@@ -158,6 +158,11 @@ def five():
 	# There are no hints for this question.
     
 def six(input):
+	stringy = input.lower()
+	z = len(input)
+	if stringy[z-1 ] == "y" :
+		if stringy[z - 2 ] == "p":
+			return True
 	return False
 
 	# <QUESTION 7>
