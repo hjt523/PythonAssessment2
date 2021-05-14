@@ -209,7 +209,28 @@ def seven(a, b, c):
     # Use the cli to access the documentation help(str.replace)
 
 def eight(input,  a):
-	return ""
+	string = []
+	back2 = []
+	stringy = list(input)
+	count = len(input) - a
+	print(count)
+	print(stringy)
+	front = ""
+	back = ""
+	for i in range(0,len(input)):
+		if ( count > 0):
+
+			front = front + str(stringy[i])
+			back = back + str(stringy[len(stringy) - i -1])
+			count = count - 2
+		else:
+			flip = ""
+			back2 = list(back)
+			for j in range(0, len(back)):
+				flip = flip + back2[len(back2) - j -1]
+			return(front + flip)
+      
+	
 
 	# <QUESTION 9>
 
