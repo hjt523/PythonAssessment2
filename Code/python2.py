@@ -187,6 +187,10 @@ def six(input):
 	# Use the cli to access the documentation help(list.sort)
 
 def seven(a, b, c):
+	list1 = [a,b,c]
+	list2 = sorted(list1)
+	if (list2[1] - list2[0] == list2[2] - list2[1]):
+		return True
 	return False
 
 	# <QUESTION 8>
